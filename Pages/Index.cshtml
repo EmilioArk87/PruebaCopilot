@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Snake Game App";
+}
+
+<div class="text-center">
+    <h1 class="display-4">🐍 Snake Game App</h1>
+    <p class="lead">Aplicación web para registrar tus puntajes de Snake Game</p>
+    
+    <div class="mt-5">
+        <a asp-page="/GameRecords/Index" class="btn btn-primary btn-lg me-3">
+            🏆 Ver Registros
+        </a>
+        <a asp-page="/GameRecords/Create" class="btn btn-success btn-lg">
+            📝 Nuevo Registro
+        </a>
+    </div>
+    
+    <div class="mt-4">
+        <p class="text-muted">
+            Guarda tu nickname, tiempo de juego y puntaje logrado en Snake Game
+        </p>
+    </div>
+</div>
